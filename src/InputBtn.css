@@ -1,0 +1,42 @@
+/*Seccion recuadro seleccion*/
+  /*H1 cuadro seleccion*/
+  .titleSection{
+    margin-top: -20px;
+  }
+  /*Organización Input y Botones*/
+  .inputBtn{
+    display: flex;
+    margin-bottom: 10px;
+  }
+  /*Input Seleccion*/
+  .inputSeleccion{
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  /*Boton Agregar*/
+  .BtnSave{
+    background-color: #0eb3b3;
+    margin: 0px 2px;
+    border: 0 solid transparent;
+    &:hover{
+      background-color: #00ffff;
+      color: black;
+    }
+  }
+
+  /*Boton Eliminar*/
+  .BtnRemove{
+    background-color: #cd5656;
+    margin: 0px 2px;
+    border: 0 solid transparent;
+    &:hover{
+      background-color: #ff0000;
+      color: black;
+    }
+  }
+/*Fin seccion recuadro seleccion*/
