@@ -2,16 +2,38 @@
   /*H1 cuadro seleccion*/
   .titleSection{
     margin-top: -20px;
+    color: #fff;
   }
+
+  .ubiBtn{
+    display: flex;
+  }
+
+
   /*Organización Input y Botones*/
   .inputBtn{
     display: flex;
     margin-bottom: 10px;
   }
+  .sel{
+    width: 100%;
+    height: 40px;
+  }
+
+  @media (max-width: 490px) {
+    .inputBtnFlex{
+      display: flex;
+      flex-direction: column;
+    }
+    .ubiBtn{
+      justify-content: center;
+      margin-top: 5px;
+    }
+  }
   /*Input Seleccion*/
   .inputSeleccion{
     width: 100%;
-    margin-right: 10px;
+    margin: 0px 5px -10px 0px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;

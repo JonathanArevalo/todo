@@ -1,3 +1,7 @@
+body{
+  background-color: rgb(5, 5, 5);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -8,8 +12,10 @@
 .title{
   display: flex;
 }
+
 .titleHeader{
   margin-bottom: 0px;
+  color: #fff;
 }
 .logo {
   height: 6em;
@@ -43,6 +49,7 @@
   margin-top: -65px;
   margin-bottom: 80px;
   font-size: 50px;
+  color: #fff;
 }
 @media (max-width: 655px) {
   .titleEmpresa{
@@ -60,9 +67,26 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #fff;
 }
 
+.check{
+  margin-left: -20px;
+}
+.check[type="checkbox"] {
+  accent-color: green;
+}
+@media (max-width: 490px){
+  .title{
+    flex-direction: column;
+  }
+  .titleHeader{
+    margin-top: 0px;
+  }
+  .titleEmpresa{
+    margin-bottom: 20px;
+  }
+}
 
 
 
