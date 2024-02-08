@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Header } from './components/Header';
-// import Section from "./components/Section";
 import { getTodos } from "./service/todoService";
 import { TareaA } from "./types/Tarea";
 
@@ -66,7 +65,6 @@ const App: React.FC = () => {
           ))}
         </div>
       </div>
-        {/* <Section buttonTask="X" tareas={tareas} deletTask={deletTask} />       */}
     </>
   );
 };
