@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -28,3 +29,11 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+=======
+# ReactCapacitacion
+Una aplicación simple de gestión de tareas creada con Vite y React.
+
+## Instalación
+1. Clona este repositorio:
+   git clone https://github.com/tu-usuario/tu-proyecto.git
+>>>>>>> 2bd3ac693c0b8aaebcebb6495edbe28dc7c7792c
