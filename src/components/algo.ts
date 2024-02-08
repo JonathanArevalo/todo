@@ -1,8 +1,8 @@
-const msg: string = 'jiok';
-const pedro={
-    name:"juan",
-    edad: 24
+const msg: string = 'Buenas';
+const persona={
+    name:"jonathan",
+    year: 34
 }
-pedro.edad  = 29
-console.log(pedro.edad + 1)
+persona.year  = 29
+console.log(persona.year + 1)
  
