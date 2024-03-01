@@ -5,6 +5,9 @@ import { Tarea } from "./types/Tarea";
 
 import "../src/styles/style.scss";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
+
 const App: React.FC = () => {
   const [tareas, setTareas] = useState<Tarea[]>(getTodos());
   const [campos, setCampos] = useState<string[]>([]);
@@ -76,7 +79,9 @@ const App: React.FC = () => {
           placeholder="Nuevo Campo"
           className='form-control'
         />
-        <button onClick={agregarTarea} type="button" className='btn btn-primary btn-sm float-right mr-2'>{tareaEditando ? 'Editar' : 'Agregar Tarea'}</button>
+        <button onClick={agregarTarea} type="button" className='btn btn-primary btn-sm float-right mr-2'>
+          {tareaEditando ? <FontAwesomeIcon icon={faEdit} /> : 'Agregar Tarea'}
+        </button>
       </div>
 
       <div>
@@ -86,8 +91,12 @@ const App: React.FC = () => {
             <li key={tarea.id} className="d-flex justify-content-between align-items-center mb-2">
               <span>{tarea.title}</span>
               <div>
-                <button onClick={() => editarTarea(tarea)} className='btn btn-success btn-sm'>Edit</button>
-                <button onClick={() => eliminarTarea(tarea.id)} className='btn btn-danger btn-sm'>X</button>
+                <button onClick={() => editarTarea(tarea)} className='btn btn-success btn-sm mx-2'>
+                  <FontAwesomeIcon icon={faEdit} />
+                </button>
+                <button onClick={() => eliminarTarea(tarea.id)} className='btn btn-danger btn-sm'>
+                  <FontAwesomeIcon icon={faTrash} />
+                </button>
               </div>
             </li>
           ))}
