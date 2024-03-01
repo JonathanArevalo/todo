@@ -1,4 +1,3 @@
-// todoService.ts
 import { Tarea } from '../types/Tarea';
 
 const todosFilePath = 'todo.json';
